@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- Description: This file gets included by every C# project. -->
+
+  <PropertyGroup>
+    <VersionInfoFilesDir>$(MSBuildThisFileDirectory)</VersionInfoFilesDir>
+  </PropertyGroup>
+
+  <!--
+  To include the release version (used by NuGet, for example) set the IncludeReleaseVersionFile to a non-empty
+  value. Note that this file is not part of the source repo, so it needs to be created first.
+  -->
+  <ItemGroup>
+    <Compile Include="$(VersionInfoFilesDir)\SharedAssemblyInfo.cs" />
+    <Compile Include="$(VersionInfoFilesDir)\VersionInfo.g.cs"  />
+    <Compile Include="$(VersionInfoFilesDir)\ReleaseVersionInfo.g.cs" Condition="'$(IncludeReleaseVersionFile)' != ''" />
+  </ItemGroup>
+
+</Project>
