@@ -10,7 +10,7 @@
     <SourceDirectory>$(RootDirectory)\Source</SourceDirectory>
 	<BuildToolsDirectory>$(RootDirectory)\Build\Tools</BuildToolsDirectory>
 	<ToolBoxCmd>$(BuildToolsDirectory)\Sonova.ToolBox.Cmd\tools\Sonova.ToolBox.Cmd.exe</ToolBoxCmd>
-	<SolutionFile>$(SourceDirectory)\.Solutions\YourSolution.sln</SolutionFile>
+	<SolutionFile>$(SourceDirectory)\.Solutions\Sonova.ComponentTemplate.sln</SolutionFile>
   </PropertyGroup>
 
   <Target Name="Clean">
