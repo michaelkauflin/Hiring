@@ -1,0 +1,1 @@
+Ensure that the *.DotSettings and *.sln have the same name.

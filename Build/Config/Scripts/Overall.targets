@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0"
+         DefaultTargets="BuildPackPublish"
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <!-- Represents the Root directory of the codebase. GetFullPath is used so that the root directory is absolute -->
+    <RootDirectory>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)\..\..\..'))</RootDirectory>
+    <!-- Path where the source code relies -->
+    <SourceDirectory>$(RootDirectory)\Source</SourceDirectory>
+	<BuildToolsDirectory>$(RootDirectory)\Build\Tools</BuildToolsDirectory>
+	<ToolBoxCmd>$(BuildToolsDirectory)\Sonova.ToolBox.Cmd\tools\Sonova.ToolBox.Cmd.exe</ToolBoxCmd>
+	<SolutionFile>$(SourceDirectory)\.Solutions\Sonova.ComponentTemplate.sln</SolutionFile>
+  </PropertyGroup>
+
+  <Target Name="Clean">
+	<MsBuild Projects="$(SolutionFile)" 
+	         Targets="Clean" />
+  </Target>
+  
+  <!-- A Target can only define a new property in the scope of the script once it is totally finished
+	   The property settings that may be used outside of the main target need to be defined in a preliminary target
+	   This is the guy doing this job.
+  -->
+  <Target Name="_SetBuildPackPublishProperties">
+	<PropertyGroup>
+		<BuildNumber Condition="'$(BuildNumber)' == ''">0</BuildNumber>
+    </PropertyGroup>
+  </Target>
+  
+  <Target Name="BuildPackPublish" DependsOnTargets="_SetBuildPackPublishProperties">
+	
+	<Exec Command="$(ToolBoxCmd) prepare-release -n $(BuildNumber) -b ." WorkingDirectory="$(RootDirectory)"/>
+	
+	<MsBuild Projects="$(SolutionFile)" />
+	
+	<Exec Command="$(ToolBoxCmd) test -b ." WorkingDirectory="$(RootDirectory)"/>
+	
+	<Exec Command="$(ToolBoxCmd) pack -b ." WorkingDirectory="$(RootDirectory)"/>
+		  
+    <Exec Command="$(ToolBoxCmd) publish -b ." WorkingDirectory="$(RootDirectory)"/>
+  </Target>
+</Project>
