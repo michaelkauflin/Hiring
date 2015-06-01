@@ -6,6 +6,8 @@
 # not using merge=union here since we prefer a merge conflict over a bad union merge
 # (less convenient but less risky)
 *.csproj text
+*.vcxproj text
+*.vcxproj.filters text
 *.vbproj text
 *.fsproj text
 *.dbproj text
@@ -36,6 +38,10 @@
 *.py text
 *.nunit text
 *.inf text
+*.cpp text
+*.h text
+*.rc text
+*.rc2 text
 
 *.DotSettings text eol=lf
 *.sh text eol=lf
