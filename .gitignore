@@ -29,6 +29,7 @@ _ReSharper*/
 ExternalPackages/
 Build/Tools/
 Output/
+Cache/
 Build/Sonova.Bootstrapper/
 Source/.Shared/ReleaseVersionInfo.g.cs
 Source/.Shared/InformationalVersionNumber.h
