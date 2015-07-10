@@ -31,3 +31,4 @@ Build/Tools/
 Output/
 Build/Sonova.Bootstrapper/
 Source/.Shared/ReleaseVersionInfo.g.cs
+Source/.Shared/InformationalVersionNumber.h
