@@ -12,11 +12,6 @@
 	<ToolBoxCmd>$(BuildToolsDirectory)\Sonova.ToolBox.Cmd\tools\Sonova.ToolBox.Cmd.exe</ToolBoxCmd>
 	<SolutionFile>$(SourceDirectory)\.Solutions\Sonova.ComponentTemplate.sln</SolutionFile>
   </PropertyGroup>
-
-  <Target Name="Clean">
-	<MsBuild Projects="$(SolutionFile)" 
-	         Targets="Clean" />
-  </Target>
   
   <!-- A Target can only define a new property in the scope of the script once it is totally finished
 	   The property settings that may be used outside of the main target need to be defined in a preliminary target
@@ -32,12 +27,16 @@
 	
 	<Exec Command="$(ToolBoxCmd) prepare-release -n $(BuildNumber) -b ." WorkingDirectory="$(RootDirectory)"/>
 	
-	<MsBuild Projects="$(SolutionFile)" />
+	<Exec Command="$(ToolBoxCmd) build -c $(Configuration) -b ." WorkingDirectory="$(RootDirectory)"/>
 	
 	<Exec Command="$(ToolBoxCmd) test -b ." WorkingDirectory="$(RootDirectory)"/>
 	
 	<Exec Command="$(ToolBoxCmd) pack -b ." WorkingDirectory="$(RootDirectory)"/>
 		  
     <Exec Command="$(ToolBoxCmd) publish -b ." WorkingDirectory="$(RootDirectory)"/>
+  </Target>
+  
+  <Target Name="CleanEverything">
+	<Exec Command="$(ToolBoxCmd) clean -b ." WorkingDirectory="$(RootDirectory)"/>
   </Target>
 </Project>
