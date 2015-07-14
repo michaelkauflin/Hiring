@@ -6,11 +6,8 @@
   <PropertyGroup>
     <!-- Represents the Root directory of the codebase. GetFullPath is used so that the root directory is absolute -->
     <RootDirectory>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)\..\..\..'))</RootDirectory>
-    <!-- Path where the source code relies -->
-    <SourceDirectory>$(RootDirectory)\Source</SourceDirectory>
 	<BuildToolsDirectory>$(RootDirectory)\Build\Tools</BuildToolsDirectory>
 	<ToolBoxCmd>$(BuildToolsDirectory)\Sonova.ToolBox.Cmd\tools\Sonova.ToolBox.Cmd.exe</ToolBoxCmd>
-	<SolutionFile>$(SourceDirectory)\.Solutions\Sonova.ComponentTemplate.sln</SolutionFile>
   </PropertyGroup>
   
   <!-- A Target can only define a new property in the scope of the script once it is totally finished
