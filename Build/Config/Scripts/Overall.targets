@@ -24,6 +24,8 @@
 	
 	<Exec Command="$(ToolBoxCmd) prepare-release -n $(BuildNumber) -b ." WorkingDirectory="$(RootDirectory)"/>
 	
+    <Exec Command="$(ToolBoxCmd) buildcop -b ." WorkingDirectory="$(RootDirectory)"/>
+    
 	<Exec Command="$(ToolBoxCmd) build -c $(Configuration) -b ." WorkingDirectory="$(RootDirectory)"/>
 	
 	<Exec Command="$(ToolBoxCmd) test -b ." WorkingDirectory="$(RootDirectory)"/>

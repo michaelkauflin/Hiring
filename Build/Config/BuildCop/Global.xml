@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<projectSettings>
+  <buildProperties configuration="Debug">
+    <buildProperty name="DebugSymbols" value="true" />
+    <buildProperty name="DebugType" value="full" />
+    <buildProperty name="DefineConstants" value="DEBUG;TRACE" />
+  </buildProperties>
+  <buildProperties configuration="Release">
+    <buildProperty name="DebugType" value="pdbonly" />
+    <buildProperty name="DefineConstants" value="TRACE" />
+  </buildProperties>
+  <sharedBuildProperties>
+    <buildProperty name="OutputPath" value="..\..\Bin\" />
+    <buildProperty name="RootNamespace" value="Sonova." />
+    <buildProperty name="DocumentationFile" value="..\..\Bin\" />
+    <buildProperty name="TargetFrameworkVersion" value="v4.5" />
+    <buildProperty name="ErrorReport" value="prompt" />
+    <buildProperty name="TreatWarningsAsErrors" value="true" />
+    <buildProperty name="WarningLevel" value="4" />
+    <buildProperty name="PlatformTarget" value="AnyCPU" />
+    <buildProperty name="Platform" value="AnyCPU" />
+  </sharedBuildProperties>
+  <namespaceSuffixes>
+  </namespaceSuffixes>
+  <libraryReferences>
+  </libraryReferences>
+  <projectImports>
+    <projectImport value="..\.Shared\Common.targets" />
+  </projectImports>
+</projectSettings>
