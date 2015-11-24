@@ -12,7 +12,7 @@
   <sharedBuildProperties>
     <buildProperty name="OutputPath" value="..\..\Bin\" />
     <buildProperty name="RootNamespace" value="Sonova." />
-    <buildProperty name="DocumentationFile" value="..\..\Bin\" />
+    <buildProperty name="DocumentationFile" value="..\..\Bin\" optional="true"/>
     <buildProperty name="TargetFrameworkVersion" value="v4.5" />
     <buildProperty name="ErrorReport" value="prompt" />
     <buildProperty name="TreatWarningsAsErrors" value="true" />
