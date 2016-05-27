@@ -1,0 +1,4 @@
+source https://artifacts.sonova.com/artifactory/api/nuget/components-production
+
+nuget Sonova.ToolBox.Cmd
+nuget Sonova.ToolBox.Gui
