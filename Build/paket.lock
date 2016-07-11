@@ -1,5 +1,4 @@
 NUGET
   remote: https://artifacts.sonova.com/artifactory/api/nuget/components-production
-  specs:
     Sonova.ToolBox.Cmd (2.3.1)
     Sonova.ToolBox.Gui (2.3.1)
