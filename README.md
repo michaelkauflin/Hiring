@@ -9,9 +9,11 @@ TODO: describe the component in a few sentences. Images will help.
 ## Contributing
 ### Who
 Everyone 
+
 TODO: define who is welcome to contribute
 ### Process
 TODO: define the process to follow for contributors
+
 1. Open an Issue describing the idea, or bug
 2. Wait for the (TODO: define team name) team to reply
 3. Clone this repository directly and create a feature branch
