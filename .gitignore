@@ -28,6 +28,7 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 ExternalPackages/
 packages/
+Build/Config/.toolbox
 Build/Tools/
 Build/packages/
 Output/
