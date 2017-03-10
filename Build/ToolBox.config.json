@@ -1,10 +1,12 @@
 ﻿{
+  "$schema": "./packages/Sonova.ToolBox.ComponentFramework.Plugin.Platform/tools/toolbox-componentframework-config-schema.json",
+
   "Packaging": {
     "Libraries": [
-    
+
     ],
     "Tools": [
-    
+      
     ]
   }
 }

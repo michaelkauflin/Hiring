@@ -37,3 +37,4 @@ Build/Sonova.Bootstrapper/
 Source/.Shared/ReleaseVersionInfo.g.cs
 Source/.Shared/ReleaseVersionInfo.g.cpp
 Source/.Shared/InformationalVersionNumber.h
+.vs/

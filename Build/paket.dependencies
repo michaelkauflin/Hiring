@@ -1,4 +1,12 @@
 source https://artifacts.sonova.com/artifactory/api/nuget/components-production
 
 nuget Sonova.ToolBox.Cmd
+nuget Sonova.ToolBox.ComponentFramework.Plugin.Packaging
+nuget Sonova.ToolBox.ComponentFramework.Plugin.Platform
+nuget Sonova.ToolBox.General.Plugin.ArchiCop
+nuget Sonova.ToolBox.General.Plugin.BuildCop
+nuget Sonova.ToolBox.General.Plugin.Builder
+nuget Sonova.ToolBox.General.Plugin.LocalDebug
+nuget Sonova.ToolBox.General.Plugin.TestRunner
+nuget Sonova.ToolBox.General.Plugin.Workflow
 nuget Sonova.ToolBox.Gui
