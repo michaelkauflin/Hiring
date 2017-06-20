@@ -7,6 +7,10 @@ TODO: describe the component in a few sentences. Images will help.
 * [Release Notes](ReleaseNotes.md)
 
 ## Contributing
+### Required Tools
+* Visual Studio TODO: Insert required version
+* TODO: specify other tools needed for contributors
+
 ### Who
 Everyone 
 
