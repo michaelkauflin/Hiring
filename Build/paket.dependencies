@@ -1,5 +1,6 @@
 source https://artifacts.sonova.com/artifactory/api/nuget/components-production
 
+nuget Nunit.Console
 nuget Sonova.ToolBox.Cmd
 nuget Sonova.ToolBox.ComponentFramework.Plugin.Packaging
 nuget Sonova.ToolBox.ComponentFramework.Plugin.Platform
