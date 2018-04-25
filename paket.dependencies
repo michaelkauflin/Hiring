@@ -1,1 +1,4 @@
-source https://artifacts.sonova.com/artifactory/api/nuget/components-production
+source http://artifacts-pcsw.sonova.com/nuget/components-production-local/
+source https://api.nuget.org/v3/index.json
+source http://artifacts-pcsw.sonova.com/nuget/thirdparty-local/
+source http://artifacts-pcsw.sonova.com/nuget/components-integration-local/
