@@ -4,6 +4,7 @@ source http://artifacts-pcsw.sonova.com/nuget/thirdparty-local/
 source http://artifacts-pcsw.sonova.com/nuget/components-integration-local/
 
 framework: net461
+storage: packages
 
 nuget Nunit.Console
 nuget Sonova.ToolBox.Cmd

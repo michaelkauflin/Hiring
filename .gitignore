@@ -39,3 +39,7 @@ Source/.Shared/ReleaseVersionInfo.g.cpp
 Source/.Shared/InformationalVersionNumber.h
 .vs/
 .idea/
+/.paket/Paket.Restore.targets
+/Build/.paket/Paket.Restore.targets
+/Build/paket-files/paket.restore.cached
+/paket-files/paket.restore.cached
