@@ -43,3 +43,7 @@ Source/.Shared/InformationalVersionNumber.h
 /Build/.paket/Paket.Restore.targets
 /Build/paket-files/paket.restore.cached
 /paket-files/paket.restore.cached
+/.paket/Paket.Restore.targets
+/Build/.paket/Paket.Restore.targets
+/Build/paket-files/paket.restore.cached
+/paket-files/paket.restore.cached
