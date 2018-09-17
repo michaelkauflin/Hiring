@@ -4,4 +4,4 @@ source http://artifacts-pcsw.sonova.com/nuget/thirdparty-local/
 source http://artifacts-pcsw.sonova.com/nuget/components-integration-local/
 storage: packages
 
-storage: packages
+nuget NUnit
