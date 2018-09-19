@@ -4,3 +4,11 @@ RESTRICTION: == net46
 NUGET
   remote: https://api.nuget.org/v3/index.json
     NUnit (3.10.1)
+    xunit.abstractions (2.0.3)
+    Xunit.core (2.4)
+      xunit.extensibility.core (2.4)
+      xunit.extensibility.execution (2.4)
+    xunit.extensibility.core (2.4)
+      xunit.abstractions (>= 2.0.2)
+    xunit.extensibility.execution (2.4)
+      xunit.extensibility.core (2.4)
