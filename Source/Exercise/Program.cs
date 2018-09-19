@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Exercise
 {
@@ -7,6 +8,8 @@ namespace Exercise
         static void Main(string[] args)
         {
             TestLinkedList();
+            TestTree();
+            ArraySum(new[] { 1, 2, 3, 4 });
             Console.ReadLine();
         }
 
@@ -21,6 +24,7 @@ namespace Exercise
             var t = new Tree(n);
             Console.WriteLine("Sum is " + t.Sum());
             Console.WriteLine("Min is " + t.Min());
+            Console.WriteLine("\n");
         }
 
         static void TestLinkedList()
@@ -33,22 +37,23 @@ namespace Exercise
             n2.Next = n3;
             n3.Next = n4;
             var list = new LinkedList(n1);
-            Console.Write("List before reversing: ");
+            Console.WriteLine("List before reversing: ");
+            list.PrintList();
+            list.Revert();
+            Console.WriteLine("\nList after reverting: ");
             list.PrintList();
             Console.WriteLine("\n");
-            list.Revert();
-            Console.WriteLine("List after reverting: ");
-            list.PrintList();
         }
 
-        public int ArraySum(int[] a)
+        static void ArraySum(IEnumerable<int> a)
         {
-            var result = 0;
+            var result = 0; 
             foreach (var i in a)
             {
                 result = result + i;
             }
-            return result;
+            Console.WriteLine("Sum is " + result); 
+            Console.WriteLine("\n");
         }
     }
 }
