@@ -8,3 +8,4 @@ redirects: on
 storage: packages
 
 nuget NUnit
+nuget Xunit.core
