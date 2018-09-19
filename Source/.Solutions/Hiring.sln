@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code", "Code", "{3A99FE73-A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise", "..\Exercise\Exercise.csproj", "{167991C6-BBC6-4761-BAD5-E4EDF3E4E45D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise.Tests", "..\Exercise.Tests\Exercise.Tests.csproj", "{05405240-97BD-40E4-A520-A8ADE66C571A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,11 +33,16 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{167991C6-BBC6-4761-BAD5-E4EDF3E4E45D} = {3A99FE73-A56D-42AE-A0CB-9001C05EC116}
+		{05405240-97BD-40E4-A520-A8ADE66C571A} = {3A99FE73-A56D-42AE-A0CB-9001C05EC116}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{167991C6-BBC6-4761-BAD5-E4EDF3E4E45D}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{167991C6-BBC6-4761-BAD5-E4EDF3E4E45D}.Debug|Any CPU.Build.0 = Debug|x86
 		{167991C6-BBC6-4761-BAD5-E4EDF3E4E45D}.Release|Any CPU.ActiveCfg = Release|x86
 		{167991C6-BBC6-4761-BAD5-E4EDF3E4E45D}.Release|Any CPU.Build.0 = Release|x86
+		{05405240-97BD-40E4-A520-A8ADE66C571A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05405240-97BD-40E4-A520-A8ADE66C571A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05405240-97BD-40E4-A520-A8ADE66C571A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05405240-97BD-40E4-A520-A8ADE66C571A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
