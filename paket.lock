@@ -1,1 +1,6 @@
-
+REDIRECTS: ON
+STORAGE: PACKAGES
+RESTRICTION: == net46
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    NUnit (3.10.1)
