@@ -2,6 +2,9 @@ source http://artifacts-pcsw.sonova.com/nuget/components-production-local/
 source https://api.nuget.org/v3/index.json
 source http://artifacts-pcsw.sonova.com/nuget/thirdparty-local/
 source http://artifacts-pcsw.sonova.com/nuget/components-integration-local/
+
+framework: net46
+redirects: on
 storage: packages
 
 nuget NUnit
