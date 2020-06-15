@@ -3,25 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{41FCD85E-214D-4DF7-B142-45834F1FA486}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\paket.dependencies = ..\..\paket.dependencies
-		..\..\paket.lock = ..\..\paket.lock
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise", ".src\Exercise\Exercise.csproj", "{167991C6-BBC6-4761-BAD5-E4EDF3E4E45D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F5015007-B898-4776-A41D-94ACE558731D}"
-	ProjectSection(SolutionItems) = preProject
-		..\.Shared\Common.targets = ..\.Shared\Common.targets
-		..\.Shared\SharedAssemblyInfo.cs = ..\.Shared\SharedAssemblyInfo.cs
-		..\..\Build\ToolBox.config.json = ..\..\Build\ToolBox.config.json
-		..\.Shared\VersionInfo.g.cs = ..\.Shared\VersionInfo.g.cs
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code", "Code", "{3A99FE73-A56D-42AE-A0CB-9001C05EC116}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise", "..\Exercise\Exercise.csproj", "{167991C6-BBC6-4761-BAD5-E4EDF3E4E45D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise.Tests", "..\Exercise.Tests\Exercise.Tests.csproj", "{05405240-97BD-40E4-A520-A8ADE66C571A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise.Tests", ".src\Exercise.Tests\Exercise.Tests.csproj", "{05405240-97BD-40E4-A520-A8ADE66C571A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

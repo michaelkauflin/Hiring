@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+		<Product>Sonova.Hiring</Product>
+		<Company>Sonova</Company>
+		<Copyright>Copyright © Sonova 2020</Copyright>
+        <Configuration Condition="$(Configuration) == ''">Debug</Configuration>
+        <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)obj/$(MSBuildProjectName)/</BaseIntermediateOutputPath>
+        <OutputPath>$(MSBuildThisFileDirectory)bin/</OutputPath>
+        <LangVersion>latest</LangVersion>
+		<VersionPrefix>9.3.2</VersionPrefix>
+        <VersionSuffix>dev</VersionSuffix>
+        <WarningLevel>4</WarningLevel>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <ErrorReport>prompt</ErrorReport>
+    </PropertyGroup>
+</Project>
