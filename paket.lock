@@ -1,14 +1,21 @@
 REDIRECTS: ON
-STORAGE: PACKAGES
+STORAGE: NONE
 RESTRICTION: == net46
 NUGET
   remote: https://api.nuget.org/v3/index.json
-    NUnit (3.10.1)
+    Microsoft.CodeCoverage (16.6.1)
+    Microsoft.NET.Test.Sdk (16.6.1)
+      Microsoft.CodeCoverage (>= 16.6.1)
+    Microsoft.NETFramework.ReferenceAssemblies (1.0) - copy_local: true
+      Microsoft.NETFramework.ReferenceAssemblies.net46 (>= 1.0)
+    Microsoft.NETFramework.ReferenceAssemblies.net46 (1.0) - copy_local: true
+    NUnit (3.12)
+    NUnit3TestAdapter (3.16.1)
     xunit.abstractions (2.0.3)
-    Xunit.core (2.4)
-      xunit.extensibility.core (2.4)
-      xunit.extensibility.execution (2.4)
-    xunit.extensibility.core (2.4)
-      xunit.abstractions (>= 2.0.2)
-    xunit.extensibility.execution (2.4)
-      xunit.extensibility.core (2.4)
+    Xunit.core (2.4.1)
+      xunit.extensibility.core (2.4.1)
+      xunit.extensibility.execution (2.4.1)
+    xunit.extensibility.core (2.4.1)
+      xunit.abstractions (>= 2.0.3)
+    xunit.extensibility.execution (2.4.1)
+      xunit.extensibility.core (2.4.1)
