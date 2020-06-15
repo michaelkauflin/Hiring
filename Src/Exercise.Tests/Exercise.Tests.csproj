@@ -1,97 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="C:\Users\11mkauflin\.nuget\packages\xunit.core\2.4.1\build\xunit.core.props" Condition="Exists('C:\Users\11mkauflin\.nuget\packages\xunit.core\2.4.1\build\xunit.core.props')" Label="Paket" />
-  <Import Project="C:\Users\11mkauflin\.nuget\packages\nunit\3.12.0\build\NUnit.props" Condition="Exists('C:\Users\11mkauflin\.nuget\packages\nunit\3.12.0\build\NUnit.props')" Label="Paket" />
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{05405240-97BD-40E4-A520-A8ADE66C571A}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <OutputType>Tool</OutputType>
     <RootNamespace>Exercise.Tests</RootNamespace>
     <AssemblyName>Exercise.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-    <TargetFrameworkProfile />
+    <TargetFramework>net461</TargetFramework>
+    <IncludeBuildOutput>true</IncludeBuildOutput>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\Bin\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\..\Bin\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Exercise\Exercise.csproj">
-      <Project>{167991C6-BBC6-4761-BAD5-E4EDF3E4E45D}</Project>
-      <Name>Exercise</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="paket.references" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Choose>
-    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.6'">
-      <ItemGroup>
-        <Reference Include="nunit.framework">
-          <HintPath>C:\Users\11mkauflin\.nuget\packages\nunit\3.12.0\lib\net45\nunit.framework.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
-      </ItemGroup>
-    </When>
-  </Choose>
-  <Choose>
-    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.6'">
-      <ItemGroup>
-        <Reference Include="xunit.abstractions">
-          <HintPath>C:\Users\11mkauflin\.nuget\packages\xunit.abstractions\2.0.3\lib\net35\xunit.abstractions.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
-      </ItemGroup>
-    </When>
-  </Choose>
-  <Choose>
-    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.6'">
-      <ItemGroup>
-        <Reference Include="xunit.core">
-          <HintPath>C:\Users\11mkauflin\.nuget\packages\xunit.extensibility.core\2.4.1\lib\net452\xunit.core.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
-      </ItemGroup>
-    </When>
-  </Choose>
-  <Choose>
-    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v4.6'">
-      <ItemGroup>
-        <Reference Include="xunit.execution.desktop">
-          <HintPath>C:\Users\11mkauflin\.nuget\packages\xunit.extensibility.execution\2.4.1\lib\net452\xunit.execution.desktop.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
-      </ItemGroup>
-    </When>
-  </Choose>
-  <Import Project="C:\Users\11mkauflin\.nuget\packages\xunit.core\2.4.1\build\xunit.core.targets" Condition="Exists('C:\Users\11mkauflin\.nuget\packages\xunit.core\2.4.1\build\xunit.core.targets')" Label="Paket" />
+  <ItemGroup>  
+	<PackageReference Include="Microsoft.Netframework.Referenceassemblies" Version="1.0.0" PrivateAssets="all" />  
+   </ItemGroup> 
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>
