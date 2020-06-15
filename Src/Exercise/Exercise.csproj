@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputType>Tool</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>Exercise</RootNamespace>
     <AssemblyName>Exercise</AssemblyName>
     <TargetFramework>net461</TargetFramework>

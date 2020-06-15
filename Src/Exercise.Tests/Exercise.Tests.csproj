@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputType>Tool</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>Exercise.Tests</RootNamespace>
     <AssemblyName>Exercise.Tests</AssemblyName>
     <TargetFramework>net461</TargetFramework>
