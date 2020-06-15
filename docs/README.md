@@ -1,13 +1,16 @@
 # Hiring
 
-Programming examples for hiring process.
-
-## Contributing
-
-### Required Tools
+## Required Tools
 
 * Visual Studio 2017
+* .NET Core 3.1.100 or higher
 
-### Who
+## Commands
 
-Everyone
+* .paket\paket install
+
+* dotnet restore
+
+* dotnet build
+
+* dotnet test
