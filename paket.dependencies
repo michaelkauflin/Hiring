@@ -1,11 +1,11 @@
-source http://artifacts-pcsw.sonova.com/nuget/components-production-local/
 source https://api.nuget.org/v3/index.json
-source http://artifacts-pcsw.sonova.com/nuget/thirdparty-local/
-source http://artifacts-pcsw.sonova.com/nuget/components-integration-local/
 
 framework: net46
 redirects: on
-storage: packages
+storage: none
 
+nuget Microsoft.NETFramework.ReferenceAssemblies copy_local:true
+nuget Microsoft.NET.Test.Sdk
+nuget NUnit3TestAdapter
 nuget NUnit
 nuget Xunit.core

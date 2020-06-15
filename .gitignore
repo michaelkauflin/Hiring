@@ -28,15 +28,8 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 ExternalPackages/
 packages/
-Build/Config/.toolbox
-Build/Tools/
-Build/packages/
 Output/
 Cache/
-Build/Sonova.Bootstrapper/
-Source/.Shared/ReleaseVersionInfo.g.cs
-Source/.Shared/ReleaseVersionInfo.g.cpp
-Source/.Shared/InformationalVersionNumber.h
 .vs/
 .idea/
 /.paket/Paket.Restore.targets
