@@ -3,7 +3,7 @@
 ## Required Tools
 
 * Visual Studio 2017
-* .NET Core 3.1.100 or higher
+* .NET Core 3.1.301 or higher
 
 ## Commands
 
@@ -14,3 +14,7 @@
 * dotnet build
 
 * dotnet test
+
+* dotnet clean
+
+* dotnet pack
