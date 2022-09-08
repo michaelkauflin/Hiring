@@ -2,7 +2,7 @@
 Thumbs.db
 #Ignore files build by Visual Studio
 *.obj
-*.exe
+#*.exe
 *.pdb
 *.user
 *.aps
@@ -33,10 +33,5 @@ Cache/
 .vs/
 .idea/
 /.paket/Paket.Restore.targets
-/Build/.paket/Paket.Restore.targets
-/Build/paket-files/paket.restore.cached
 /paket-files/paket.restore.cached
 /.paket/Paket.Restore.targets
-/Build/.paket/Paket.Restore.targets
-/Build/paket-files/paket.restore.cached
-/paket-files/paket.restore.cached
