@@ -11,6 +11,8 @@ NUGET
     Microsoft.NETFramework.ReferenceAssemblies.net461 (1.0) - copy_local: true
     NUnit (3.12)
     NUnit3TestAdapter (3.16.1)
+    NUnitLite (3.12)
+      NUnit (3.12)
     xunit.abstractions (2.0.3)
     Xunit.core (2.4.1)
       xunit.extensibility.core (2.4.1)

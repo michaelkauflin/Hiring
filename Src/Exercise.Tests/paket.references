@@ -1,4 +1,5 @@
 NUnit
+NUnitLite
 Xunit.core
 Microsoft.NET.Test.Sdk
 NUnit3TestAdapter

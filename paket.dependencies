@@ -8,4 +8,5 @@ nuget Microsoft.NETFramework.ReferenceAssemblies copy_local:true
 nuget Microsoft.NET.Test.Sdk
 nuget NUnit3TestAdapter
 nuget NUnit
+nuget NUnitLite
 nuget Xunit.core
