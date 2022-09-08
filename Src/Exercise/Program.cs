@@ -3,13 +3,11 @@ using System.Text;
 
 namespace Exercise
 {
-    class Program
+    internal static class Program
     {
         // tree -min 1,[2],3,4
         // tree -sum 1,2,3,4
-        // linked -revert 1,2,3,4 
-        // linked -print 1,2,3,4 
-        static int Main(string[] args)
+        private static int Main(string[] args)
         {
             int count = args.Length;
 
@@ -39,31 +37,6 @@ namespace Exercise
 
             switch (option)
             {
-                case Option.Linked:
-                {
-                    LinkedList linkedList = CreateLinkedList(args[2]);
-                    switch (subOption)
-                    {
-                        case SubOption.Print:
-                        {
-                            linkedList.PrintList();
-                            break;
-                        }
-                        case SubOption.Revert:
-                        {
-                            linkedList.Revert();
-                            linkedList.PrintList();
-                            break;
-                        }
-                        default:
-                        {
-                            Usage();
-                            break;
-                        }
-                    }
-                    
-                    break;
-                }
                 case Option.Tree:
                 {
                     Tree tree = CreateTree(args[2]);
@@ -144,43 +117,13 @@ namespace Exercise
             return new Tree(rootNode);
         }
 
-        private static LinkedList CreateLinkedList(string input)
-        {
-            string[] args = input.Split(',');
-
-            LinkedListNode linkedListNode = null;
-            LinkedListNode current = null;
-            foreach (string arg in args)
-            {
-                if (!int.TryParse(arg, out int value))
-                {
-                    
-                }
-
-                var item = new LinkedListNode(value);
-                if (linkedListNode == null)
-                {
-                    linkedListNode = item;
-                    current = linkedListNode;
-                }
-                else
-                {
-                    current.Next = item;
-                    current = item;
-                }
-            }
-            
-            return new LinkedList(linkedListNode);
-        }
-
         private static void Usage()
         {
             var stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("Usage:");
             stringBuilder.AppendLine("* 'tree -sum 1,2,3,4'");
+            stringBuilder.AppendLine("* 'tree -sum 1,[2,3],4'");
             stringBuilder.AppendLine("* 'tree -min 1,2,3,4'");
-            stringBuilder.AppendLine("* 'linked -print 1,2,3,4'");
-            stringBuilder.AppendLine("* 'linked -revert 1,2,3,4'");
             
             Console.WriteLine(stringBuilder.ToString());
         }
@@ -188,15 +131,12 @@ namespace Exercise
         private enum Option
         {
             Tree,
-            Linked,
         }
 
         private enum SubOption
         {
             Sum,
-            Min,
-            Print,
-            Revert
+            Min
         }
     }
 }

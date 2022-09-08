@@ -2,7 +2,7 @@
 {
     public class Node
     {
-        public int Info { get; private set; }
+        public int Info { get; }
         public Node Left { get; set; }
         public Node Right { get; set; }
 	

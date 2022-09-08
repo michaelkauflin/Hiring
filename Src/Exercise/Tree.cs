@@ -4,7 +4,7 @@ namespace Exercise
 {
     public class Tree
     {
-        public Node Root { get; private set; }
+        public Node Root { get; }
 	
 	    public Tree(Node n)
 	    {
@@ -45,10 +45,8 @@ namespace Exercise
             {
                 return Math.Min(Min(n.Right), firstMin);
             }
-            else
-            {
-                return firstMin;
-            }
+
+            return firstMin;
         }
     }
 }
