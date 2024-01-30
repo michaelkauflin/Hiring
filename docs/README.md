@@ -3,7 +3,7 @@
 ## Required Tools
 
 * Visual Studio 2017
-* .NET Core 3.1.301 or higher
+* .NET Core 8.0.100 or higher
 
 ## Commands
 
