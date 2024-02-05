@@ -1,22 +1,35 @@
 REDIRECTS: ON
 STORAGE: NONE
-RESTRICTION: == net461
+RESTRICTION: == net8.0
 NUGET
   remote: https://api.nuget.org/v3/index.json
-    Microsoft.CodeCoverage (16.6.1)
-    Microsoft.NET.Test.Sdk (16.6.1)
-      Microsoft.CodeCoverage (>= 16.6.1)
-    Microsoft.NETFramework.ReferenceAssemblies (1.0) - copy_local: true
-      Microsoft.NETFramework.ReferenceAssemblies.net461 (>= 1.0)
-    Microsoft.NETFramework.ReferenceAssemblies.net461 (1.0) - copy_local: true
+    Microsoft.CodeCoverage (17.8)
+    Microsoft.NET.Test.Sdk (17.8)
+      Microsoft.CodeCoverage (>= 17.8)
+      Microsoft.TestPlatform.TestHost (>= 17.8)
+    Microsoft.NETFramework.ReferenceAssemblies (1.0.3) - copy_local: true
+      Microsoft.NETFramework.ReferenceAssemblies.net481 (>= 1.0.3)
+    Microsoft.NETFramework.ReferenceAssemblies.net481 (1.0.3) - copy_local: true
+    Microsoft.TestPlatform.ObjectModel (17.8)
+      NuGet.Frameworks (>= 6.5)
+      System.Reflection.Metadata (>= 1.6)
+    Microsoft.TestPlatform.TestHost (17.8)
+      Microsoft.TestPlatform.ObjectModel (>= 17.8)
+      Newtonsoft.Json (>= 13.0.1)
+    Newtonsoft.Json (13.0.3)
+    NuGet.Frameworks (6.8)
     NUnit (4.0.1)
-    NUnit3TestAdapter (3.16.1)
+    NUnit3TestAdapter (4.5)
     NUnitLite (4.0.1)
+      NUnit (4.0.1)
+    System.Collections.Immutable (8.0)
+    System.Reflection.Metadata (8.0)
+      System.Collections.Immutable (>= 8.0)
     xunit.abstractions (2.0.3)
-    Xunit.core (2.4.1)
-      xunit.extensibility.core (2.4.1)
-      xunit.extensibility.execution (2.4.1)
-    xunit.extensibility.core (2.4.1)
+    Xunit.core (2.6.6)
+      xunit.extensibility.core (2.6.6)
+      xunit.extensibility.execution (2.6.6)
+    xunit.extensibility.core (2.6.6)
       xunit.abstractions (>= 2.0.3)
-    xunit.extensibility.execution (2.4.1)
-      xunit.extensibility.core (2.4.1)
+    xunit.extensibility.execution (2.6.6)
+      xunit.extensibility.core (2.6.6)

@@ -1,6 +1,6 @@
 source https://api.nuget.org/v3/index.json
 
-framework: net461
+framework: net8.0
 redirects: on
 storage: none
 

@@ -3,7 +3,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Exercise</RootNamespace>
     <AssemblyName>Exercise</AssemblyName>
-    <TargetFramework>net461</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <IncludeBuildOutput>true</IncludeBuildOutput>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsPackable>false</IsPackable>

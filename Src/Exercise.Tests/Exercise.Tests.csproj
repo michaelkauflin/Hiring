@@ -3,9 +3,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Exercise.Tests</RootNamespace>
     <AssemblyName>Exercise.Tests</AssemblyName>
-    <TargetFramework>net461</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <IncludeBuildOutput>true</IncludeBuildOutput>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateProgramFile>false</GenerateProgramFile>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>  
